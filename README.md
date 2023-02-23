@@ -26,5 +26,5 @@ All arguments of the load function must be the same as during training.
 
 # reason of returning models's tuple
 This project was created to optimize TimeGAN for eye-writing data.  
-Returns fully unconnected models to make some experiments easier.  
+to make some experiments easier, returns unconnected models.
 ### You can get connected-synthetic-data-generator by use ```timegan_export_generator(timegan_tuple)``` function.
