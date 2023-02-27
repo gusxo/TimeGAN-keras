@@ -18,11 +18,14 @@ syn_generator = timegan_export_generator(timegan_tuple)
 #return (32, x.shape[1], x.shape[2]) shape generated data.
 syn_data = generator_gen(syn_generator, generate_cnt=32)
 ```
+before data-generation/model-save, must run ```timegan_export_generator(timegan_tuple)``` function to get connected-generator network.
 
-### generator save/load
-save function : ```generator_save(syn_generator, save_path)```  
-load function : ```generator_load(save_path, time_series_len, features, rnn_units, rnn_layers)```  
-All arguments of the load function must be the same as during training.
+### save/load
+```
+generator_save(syn_generator, save_path)
+syn_generator = generator_load(save_path, time_series_len, features, rnn_units, rnn_layers)
+```
+above functions use ```tf.keras.model.save_weights```, so you can save/load manually.
 
 # Goal
 This project was created to conduct some experiments : optimizing TimeGAN for eye-writing data.
