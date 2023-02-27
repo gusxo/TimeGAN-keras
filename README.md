@@ -25,4 +25,4 @@ load function : ```generator_load(save_path, time_series_len, features, rnn_unit
 All arguments of the load function must be the same as during training.
 
 # Goal
-This project was created to optimize TimeGAN for eye-writing data.
+This project was created to conduct some experiments : optimizing TimeGAN for eye-writing data.
