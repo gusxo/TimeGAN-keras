@@ -25,7 +25,5 @@ before data-generation/model-save, must run ```timegan_export_generator(timegan_
 generator_save(syn_generator, save_path)
 syn_generator = generator_load(save_path, time_series_len, features, rnn_units, rnn_layers)
 ```
-above functions use ```tf.keras.model.save_weights```, so you can save/load manually.
+above functions just using ```tf.keras.model.save_weights``` and ```tf.keras.model.load_weights```, so you can save/load manually.
 
-# Goal
-This project was created to conduct some experiments : optimizing TimeGAN for eye-writing data.
